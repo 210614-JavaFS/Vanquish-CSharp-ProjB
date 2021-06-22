@@ -17,5 +17,4 @@ public class Lamp extends Fixture implements Interactive {
 		System.out.println("You have turned on the lamp.");
 		
 	}
-	
 }

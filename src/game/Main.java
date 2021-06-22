@@ -21,6 +21,10 @@ public class Main {
 		System.out.println("Long Description: " + newPlayer.currentRoom.getLongDescription());
 		System.out.println("Game: Please specify where you want to go next");
 
-
+		newPlayer.currentRoom.objectList.get(0).name;
+		
+		newPlayer.currentRoom.interact(0);
+		newPlayer.currentRoom.interact(1);
+		
 	}
 }
