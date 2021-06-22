@@ -12,15 +12,6 @@ public class Bathroom extends fixtures.Fixture {
 		
 	}
 		
-	public Bathroom[] getExits() {
-		return exits;
-		
-	}
-		
-	public Bathroom[] getExit(String direction) {
-		return exits;
-		
-	}
 	
 	/**
 	 * set Exit directions to the room.

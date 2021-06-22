@@ -4,20 +4,16 @@ import fixtures.Fixture;
 
 public class Table  extends Fixture implements Interactive {
   
-	
-	
-	
-
-
 	@Override
-	public void interactwith() {
+    public void interactwith() {
 		// TODO Auto-generated method stub
+		System.out.println("A small white table is in the bathroom.");
 		
 	}
 	
 	public Table(){
 		super();
-		this.name = "Lamp";
+		this.name = "Table";
 		this.shortDescription = "A pink lamp on the end table";
         this.longDescription = "The lamp here is a soft pink sitting on an oak end table. It“ + “ is currently turned off.";
         //this.exits[1] = RoomFactory.getRoom("Dining Room");
