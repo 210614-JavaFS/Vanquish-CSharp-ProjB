@@ -14,15 +14,15 @@ public class Table  extends Fixture implements Interactive {
 	public Table(){
 		super();
 		this.name = "Table";
-		this.shortDescription = "A pink lamp on the end table";
-        this.longDescription = "The lamp here is a soft pink sitting on an oak end table. It“ + “ is currently turned off.";
+		this.shortDescription = "A white table is the end of the bathroom";
+        this.longDescription = "The table is white with some flowrs on top of it. It“ + “ is currently painted.";
         //this.exits[1] = RoomFactory.getRoom("Dining Room");
     }
 	
 
 public void interactWith(){
-	System.out.print("You have turned on the lamp.");
-    this.longDescription = "The lamp here is a soft pink sitting on an oak end table. It” + “ is currently turned on.";
+	System.out.print("You have put some different flows on top of the table.");
+    this.longDescription = "The table is white with some flowrs on top of it. It“ + “ is currently painted.";
     }
 }
 
