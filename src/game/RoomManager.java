@@ -1,19 +1,30 @@
 package game;
 
+import fixtures.object.Drawer;
+import fixtures.object.Lamp;
+import fixtures.rooms.Foyer;
 import fixtures.rooms.Room;
 
 public class RoomManager {
+	Room startingRoom;
+	
+	Room[] rooms = new Room[8];
+	
 	public void init() {
 		
-	    Room foyer = new Room(
-			"The Foyer",
-			"a small foyer",
-			"The small entryway of a neo-colonial house. A dining room is open to the south, where a large table can be seen." + "\n"
-			+ "The hardwood floor leads west into doorway, next to a staircase that leads up to a second floor." + "\n"
-			+ "To the north is a small room, where you can see a piano.");
-			//this.rooms[0] = foyer;
-	        //this.startingRoom = foyer;
-	}
+		//Room
+	    Foyer foyer = new Foyer();
+	    this.rooms[0] = foyer;
+	    this.startingRoom = foyer;
+	    
+	    //Objects
+	    Lamp lamp = new Lamp();
+	    Drawer drawer = new Drawer();
 	
+	    //set Exit 
+	    //north, east, south, east
+	    foyer.setExit(null, null, null, null);
+	    //foyer.setObject();
 
+	}
 }
