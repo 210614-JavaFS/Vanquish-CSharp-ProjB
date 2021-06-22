@@ -12,20 +12,4 @@ public class Bathroom extends fixtures.Fixture {
 		
 	}
 		
-	
-	/**
-	 * set Exit directions to the room.
-	 * @param north
-	 * @param east
-	 * @param south
-	 * @param west
-	 */
-	
-	public void setExit(Bathroom north, Bathroom east, Bathroom south, Bathroom west) {
-		this.exits[0] = north;
-		this.exits[1] = east;
-		this.exits[2] = south;
-		this.exits[3] = west;
-	}
-
 }
