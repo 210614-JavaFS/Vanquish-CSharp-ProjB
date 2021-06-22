@@ -1,4 +1,8 @@
+
 package fixtures.rooms;
+
+import fixtures.object.Interactive;
+import fixtures.object.Lamp;
 
 /**	
  * /
@@ -8,6 +12,7 @@ package fixtures.rooms;
 
 
 public class Foyer extends fixtures.rooms.Room {
+	private Interactive roomFeature= new Lamp();
 	
 	public Foyer()  {
 		super("The Foyer",
@@ -19,3 +24,4 @@ public class Foyer extends fixtures.rooms.Room {
 	}
 
 }
+
