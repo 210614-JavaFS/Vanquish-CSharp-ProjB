@@ -1,8 +1,7 @@
 
 package game;
 
-import fixtures.object.Drawer;
-import fixtures.object.Lamp;
+import fixtures.object.*;
 import fixtures.rooms.Foyer;
 import fixtures.rooms.Room;
 
@@ -18,8 +17,9 @@ public class RoomManager {
 	    this.rooms[0] = foyer;
 	    this.startingRoom = foyer;
 	    //Objects
-	    Lamp foyerLamp = new Lamp();
-	    Drawer foyerDrawer = new Drawer();
+	    //foyer.interactWith();
+	    //Lamp foyerLamp = new Lamp();
+	    //Drawer foyerDrawer = new Drawer();
 
 	
 	    //set Exit 
@@ -27,7 +27,7 @@ public class RoomManager {
 	    foyer.setExit(null, null, null, null);
 	    
 	    //set objects to room
-	    foyer.setObject(foyerLamp, foyerDrawer);
+	    //foyer.setObject(foyerLamp, foyerDrawer);
 	    
 	}
 

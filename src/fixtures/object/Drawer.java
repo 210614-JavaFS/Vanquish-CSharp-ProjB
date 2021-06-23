@@ -12,9 +12,14 @@ public class Drawer extends Fixture implements Interactive{
 	}
 
 	@Override
-	public void interactwith() {
+	public void interactWith() {
 		System.out.println("You've removed the drawer slide and found nothing.");
 		
+	}
+
+	@Override
+	public void infoName() {
+		// TODO Auto-generated method stub
 	}
 	
 }

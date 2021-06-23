@@ -1,16 +1,21 @@
 
 package fixtures.rooms;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import fixtures.object.Interactive;
 
-public class Room extends fixtures.Fixture {
+//import java.util.ArrayList;
+//import java.util.Collection;
+
+//import fixtures.object.Interactive;
+
+public class Room extends fixtures.Fixture{
 	
 	public Room[] exits;
+	
+	private String name;
+	
 
-	public ArrayList<Interactive> objectList = new ArrayList<Interactive>();
+	//public ArrayList<Interactive> objectList = new ArrayList<Interactive>();
 	
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, shortDescription, longDescription);
@@ -33,10 +38,10 @@ public class Room extends fixtures.Fixture {
 	}
 	
 	//working in progress.
-	public void setObject(Object object1, Object object2) {
-		this.objectList.addAll((Collection<? extends Interactive>) object1);
-		this.objectList.addAll((Collection<? extends Interactive>) object2);
-	}
+	//public void setObject(Object object1, Object object2) {
+	//	this.objectList.addAll((Collection<? extends Interactive>) object1);
+	//	this.objectList.addAll((Collection<? extends Interactive>) object2);
+	//}
 	
 	
 	//return our direction
@@ -60,9 +65,15 @@ public class Room extends fixtures.Fixture {
 		return null;
 	}
 	
-	//interact with room objects
-	public void interact(int objectIndex) {
-		this.objectList.get(objectIndex).interactwith();
+//interact with room objects
+	public void interactWith() {
+	}
+
+	public void infoName() {
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	//show room objects' description

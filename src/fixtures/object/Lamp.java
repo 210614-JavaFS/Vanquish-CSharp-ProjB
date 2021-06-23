@@ -14,9 +14,12 @@ public class Lamp extends Fixture implements Interactive {
 	}
 
 	@Override
-	public void interactwith() {
-		System.out.println("You have turned on the lamp.");
-		
+	public void interactWith() {
+		System.out.println("You turn on the lamp");
+		this.longDescription = "The lamp here is a soft pink sitting on an oak end table. It" + " is currently turned on.";
+	}
+	public void infoName() {
+		System.out.println(this.longDescription );
 	}
 }
 

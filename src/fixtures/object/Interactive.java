@@ -2,6 +2,8 @@ package fixtures.object;
 
 public interface Interactive {
 	
-		public void interactwith();
-
+		
+		public void interactWith();
+		
+		public void infoName();
 }
