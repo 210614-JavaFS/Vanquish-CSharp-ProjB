@@ -46,11 +46,11 @@ public class RoomManager {
 	  	    this.rooms[1] = pcRoom;
 	  	  
 	  	    //Objects
-	  	    Computer computerRoomComputer = new Computer();
+	  	  	Computer computerRoomComputer = new Computer();
 	  	    	    
 	  	    //set Exit 
 	  	    //north, east, south, west
-	  	    pcRoom.setExit(null, null, null, null);
+	  	    pcRoom.setExit(null, null, null , null);
 
 	  	    //set objects to room
 	  	    pcRoom.setMethod(computerRoomComputer, computerRoomComputer);
