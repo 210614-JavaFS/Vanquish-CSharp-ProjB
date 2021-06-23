@@ -73,11 +73,13 @@ public class Controls {
 				
 			//NOTE. Interact with object
 			
-			case "try":
-				switch (command[1]) {
-					//To interact with objects
-				
-				}
+			case "1":
+				player.currentRoom.interact(0);
+				break;
+			
+			case "2":
+				player.currentRoom.interact(1);
+				break;
 				
 			//NOTE. Exit the game	
 			case "exit":

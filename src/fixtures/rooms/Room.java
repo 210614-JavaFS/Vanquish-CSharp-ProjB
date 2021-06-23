@@ -68,9 +68,17 @@ public class Room extends fixtures.Fixture {
 	public void interact(int objectIndex) {
 		this.methodList.get(objectIndex).interactwith();
 	}
+
+	public String showObjectName(int objectIndex) {
+		return this.methodList.get(objectIndex).showName();
+	}
 	
-	//show room objects' description
-//	public void showObjectShortDesc(int objectIndex) {
-//		this.objectList.get(objectIndex).name;
-//	}
+	public String showObjectShortDesc(int objectIndex) {
+		return this.methodList.get(objectIndex).showShortDesc();
+	}
+	
+	public String showObjectLongDesc(int objectIndex) {
+		return this.methodList.get(objectIndex).showLongDesc();
+	}
+	
 }

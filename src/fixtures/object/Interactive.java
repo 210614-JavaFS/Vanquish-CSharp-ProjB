@@ -3,8 +3,10 @@ package fixtures.object;
 public interface Interactive {
 	
 	public void interactwith();
-
-	public void infoName();
 	
-	public void showItems();
+	public String showName();
+	
+	public String showShortDesc();
+	
+	public String showLongDesc();
 }

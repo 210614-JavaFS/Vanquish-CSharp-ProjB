@@ -17,4 +17,5 @@ public class Drawer extends Fixture implements Interactive{
 		
 	}
 	
+
 }
