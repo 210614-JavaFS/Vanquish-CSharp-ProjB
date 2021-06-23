@@ -48,14 +48,14 @@ public class RoomManager {
   	  
   	    //Objects
   	  	Computer computerRoomComputer = new Computer();
-  	  	Printer computerRoomprinter = new Printer();  	  
+  	  	Printer computerRoomPrinter = new Printer();  	  
   	    	    
   	    //set Exit 
   	    //north, east, south, west
   	    pcRoom.setExit(null, mancave, livingRoom, library);
 
   	    //set objects to room
-  	    pcRoom.setMethod(computerRoomComputer, computerRoomprinter);
+  	    pcRoom.setMethod(computerRoomComputer, computerRoomPrinter);
 	}
 
 }
