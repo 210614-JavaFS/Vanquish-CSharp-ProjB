@@ -1,7 +1,9 @@
 package game;
 
+import fixtures.object.Computer;
 import fixtures.object.Drawer;
 import fixtures.object.Lamp;
+import fixtures.rooms.ComputerRoom;
 import fixtures.rooms.LivingRoom;
 import fixtures.rooms.Room;
 
@@ -39,5 +41,18 @@ public class RoomManager {
 //	    //5. assign your objects to your room
 //	    bathroom.setMethod(bathroomTable, bathroomLamp);
 	    
+	  //ComputerRoom
+	  		ComputerRoom pcRoom = new ComputerRoom();
+	  	    this.rooms[1] = pcRoom;
+	  	  
+	  	    //Objects
+	  	    Computer computerRoomComputer = new Computer();
+	  	    	    
+	  	    //set Exit 
+	  	    //north, east, south, west
+	  	    pcRoom.setExit(null, null, null, null);
+
+	  	    //set objects to room
+	  	    pcRoom.setMethod(computerRoomComputer, computerRoomComputer);
 	}
 }
