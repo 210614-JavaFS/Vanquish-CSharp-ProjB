@@ -21,5 +21,12 @@ public class Lamp extends Fixture implements Interactive {
 	public void infoName() {
 		System.out.println(this.longDescription );
 	}
+
+	@Override
+	public void showItems() {
+		System.out.println("Items:");
+		System.out.println(this.name);
+		
+	}
 }
 

@@ -18,8 +18,12 @@ public class Foyer extends fixtures.rooms.Room {
 			"The small entryway of a neo-colonial house. A dining room is open to the south, where a large table can be seen." + "\n"
 			+ "The hardwood floor leads west into doorway, next to a staircase that leads up to a second floor." + "\n"
 			+ "To the north is a small room, where you can see a piano.");
-		//this.exits[1] = RoomFactory.getRoom(“Dining Room”);
+			//this.exits[1] = Bathroom.getRoom("Bathroom");
 	}
+	public void showItems() {
+		roomFeature.showItems();
+	}
+	
 	public void interactWith() {
 		roomFeature.interactWith();
 		

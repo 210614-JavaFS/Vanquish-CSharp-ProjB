@@ -12,7 +12,7 @@ public class Room extends fixtures.Fixture{
 	
 	public Room[] exits;
 	
-	private String name;
+	
 	
 
 	//public ArrayList<Interactive> objectList = new ArrayList<Interactive>();
@@ -66,14 +66,17 @@ public class Room extends fixtures.Fixture{
 	}
 	
 //interact with room objects
-	public void interactWith() {
-	}
+	
+	public void interactWith() {}
 
-	public void infoName() {
-	}
+	public void infoName() {}
 
+	public void showItems() {}
+	
+	
+	
+	
 	public void setName(String name) {
-		this.name = name;
 	}
 	
 	//show room objects' description

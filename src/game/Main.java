@@ -23,6 +23,7 @@ public class Main {
 		System.out.println("Game: Please specify where you want to go next");
 		System.out.println("Look a lamp");
 		//newPlayer.currentRoom.objectList.get(0).name;
+		newPlayer.currentRoom.showItems();
 		newPlayer.currentRoom.infoName();
 		newPlayer.currentRoom.interactWith();
 		newPlayer.currentRoom.infoName();

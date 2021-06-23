@@ -29,6 +29,12 @@ public void interactWith1(){
 public void infoName() {
 	// TODO Auto-generated method stub
 }
+
+@Override
+public void showItems() {
+	// TODO Auto-generated method stub
+	
+}
 }
 
 
