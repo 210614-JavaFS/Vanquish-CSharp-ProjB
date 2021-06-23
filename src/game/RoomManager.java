@@ -40,4 +40,5 @@ public class RoomManager {
 //	    bathroom.setMethod(bathroomTable, bathroomLamp);
 	    
 	}
+
 }
