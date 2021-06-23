@@ -19,7 +19,7 @@ public class DinningRoom extends fixtures.rooms.Room{
 	//For the use of RoomManager.java 
 	
 //	DinningRoom dinningroom = new DinningRoom();
-//	this.rooms[9] = dinningroom;
+//	this.rooms[7] = dinningroom;
 //	dinningroom.setExit("kitchen",null,null,null);
 //	Curtain dinningCurtain = new Curtain();
 //	Note dinningNote = new Note();
