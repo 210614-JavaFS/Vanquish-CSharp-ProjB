@@ -1,3 +1,4 @@
+
 package fixtures;
 
 import fixtures.object.Interactive;
@@ -65,3 +66,4 @@ public abstract class Fixture implements Interactive {
 		return this.longDescription;
 	}
 }
+

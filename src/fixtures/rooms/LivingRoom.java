@@ -1,7 +1,7 @@
 package fixtures.rooms;
 
 import fixtures.object.Interactive;
-import fixtures.object.Lamp;
+
 
 /**	
  * /
@@ -17,6 +17,12 @@ public class LivingRoom extends fixtures.rooms.Room {
 			"short description: a simple living room",
 			"long description: Place holder description" + "\n");
 		//this.exits[1] = RoomFactory.getRoom(“Dining Room”);		
+	}
+
+	@Override
+	public void interactwith() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	
