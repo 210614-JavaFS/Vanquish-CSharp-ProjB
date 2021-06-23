@@ -1,12 +1,13 @@
+
 package fixtures.object;
 
 public interface Interactive {
 	
-		
-		public void interactWith();
-		
-		public void infoName();
-		
-		public void showItems();
-		
+	public void interactwith();
+	
+	public String showName();
+	
+	public String showShortDesc();
+	
+	public String showLongDesc();
 }

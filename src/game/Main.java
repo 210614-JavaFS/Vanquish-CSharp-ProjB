@@ -13,23 +13,31 @@ public class Main {
 		Player newPlayer = new Player();
 		newPlayer.currentRoom = newGame.startingRoom;
 		
+
+		
 		System.out.println("Welcome to the Hall Tour. Type to follow the directions");
 		Controls.enterName(newPlayer);
+		System.out.println("Hello, " + newPlayer.name + ". Welcome to our castle");
 		
-		System.out.println("Game: You can type 'go north, west, east, south'. Type 'exit' to quit game.");
-		Controls.printRoom(newPlayer);
-		System.out.println("Short Description: " + newPlayer.currentRoom.getShortDescription());
-		System.out.println("Long Description: " + newPlayer.currentRoom.getLongDescription());
-		System.out.println("Game: Please specify where you want to go next");
-		System.out.println("Look a lamp");
-		//newPlayer.currentRoom.objectList.get(0).name;
-		newPlayer.currentRoom.showItems();
-		newPlayer.currentRoom.infoName();
-		newPlayer.currentRoom.interactWith();
-		newPlayer.currentRoom.infoName();
-		//System.out.println(newPlayer.currentRoom.);
-		//newPlayer.currentRoom.interact(0);
-		//newPlayer.currentRoom.interact(1);
+		while (newPlayer.gameStatus) {
+			System.out.println("Game: You can type 'go north, west, east, south'. Type 'exit' to quit game.");
+			System.out.println("Game: To interact with room objects, type the number of your option. Type 'exit' to quit game.");
+			System.out.println("--------");
+			Controls.printRoom(newPlayer);
+			System.out.println("--------");
+			System.out.println("Short Description: " + newPlayer.currentRoom.getShortDescription());
+			System.out.println("Long Description: " + newPlayer.currentRoom.getLongDescription());
+			System.out.println("------------------------");
+			System.out.println("This room has: " + "\n"
+								+ "1. " + newPlayer.currentRoom.showObjectName(0) + "\n"
+								+ newPlayer.currentRoom.showObjectLongDesc(0) + "\n"
+								+ "2. " + newPlayer.currentRoom.showObjectName(1) + "\n"
+								+ newPlayer.currentRoom.showObjectLongDesc(1) + "\n");
+			System.out.println("Game: Please specify where you want to do next");
+			
+			Controls.processInput(Controls.collectInput(), newPlayer);
+		}
+
 		
 	}
 }

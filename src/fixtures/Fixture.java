@@ -1,6 +1,9 @@
+
 package fixtures;
 
-public abstract class Fixture {
+import fixtures.object.Interactive;
+
+public abstract class Fixture implements Interactive {
 	public String name;
 	public String shortDescription;
 	public String longDescription;
@@ -48,5 +51,19 @@ public abstract class Fixture {
 		this.longDescription = longDescription;
 	}
 	
+	@Override
+	public String showName() {
+		return this.name;
+	}
 	
+	@Override
+	public String showShortDesc() {
+		return this.shortDescription;
+	}
+	
+	@Override
+	public String showLongDesc() {
+		return this.longDescription;
+	}
 }
+

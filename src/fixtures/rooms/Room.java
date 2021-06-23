@@ -1,21 +1,17 @@
 
 package fixtures.rooms;
 
+import java.util.ArrayList;
+
+
 import fixtures.object.Interactive;
 
-//import java.util.ArrayList;
-//import java.util.Collection;
-
-//import fixtures.object.Interactive;
-
-public class Room extends fixtures.Fixture{
+public abstract class Room extends fixtures.Fixture {
 	
 	public Room[] exits;
-	
-	
-	
 
-	//public ArrayList<Interactive> objectList = new ArrayList<Interactive>();
+	
+	public ArrayList<Interactive> methodList = new ArrayList<Interactive>();
 	
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, shortDescription, longDescription);
@@ -37,12 +33,15 @@ public class Room extends fixtures.Fixture{
 		this.exits[3] = west;
 	}
 	
-	//working in progress.
-	//public void setObject(Object object1, Object object2) {
-	//	this.objectList.addAll((Collection<? extends Interactive>) object1);
-	//	this.objectList.addAll((Collection<? extends Interactive>) object2);
-	//}
-	
+	/**
+	 * Assign your objects to your room
+	 * @param object1
+	 * @param object2
+	 */
+	public void setMethod(Interactive object1, Interactive object2) {
+		this.methodList.add(object1);
+		this.methodList.add(object2);
+	}
 	
 	//return our direction
 	//get Exit return this.exits;
@@ -65,23 +64,22 @@ public class Room extends fixtures.Fixture{
 		return null;
 	}
 	
-//interact with room objects
-	
-	public void interactWith() {}
+	//interact with room objects
+	public void interact(int objectIndex) {
+		this.methodList.get(objectIndex).interactwith();
+	}
 
-	public void infoName() {}
-
-	public void showItems() {}
-	
-	
-	
-	
-	public void setName(String name) {
+	public String showObjectName(int objectIndex) {
+		return this.methodList.get(objectIndex).showName();
 	}
 	
-	//show room objects' description
-//	public void showObjectShortDesc(int objectIndex) {
-//		this.roomObjectList
-//	}
+	public String showObjectShortDesc(int objectIndex) {
+		return this.methodList.get(objectIndex).showShortDesc();
+	}
+	
+	public String showObjectLongDesc(int objectIndex) {
+		return this.methodList.get(objectIndex).showLongDesc();
+	}
+	
 }
 
