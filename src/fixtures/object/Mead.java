@@ -14,7 +14,7 @@ public class Mead extends Fixture implements Interactive  {
 
 	@Override
 	public void interactwith() {
-		this.longDescription = "On a table the cup is now empty.";
+		this.longDescription = "On a table the cup is now empty. ";
 			
 		}
 		
