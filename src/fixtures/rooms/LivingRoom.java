@@ -1,8 +1,5 @@
 package fixtures.rooms;
 
-import fixtures.object.Interactive;
-import fixtures.object.Lamp;
-
 /**	
  * /
  * @author Billy;
