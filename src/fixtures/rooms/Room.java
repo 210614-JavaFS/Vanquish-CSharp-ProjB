@@ -1,14 +1,20 @@
 package fixtures.rooms;
 
-public class Room extends fixtures.Fixture {
+import java.util.ArrayList;
+import java.util.Collection;
+
+import fixtures.object.Interactive;
+
+public abstract class Room extends fixtures.Fixture {
 	
 	public Room[] exits;
-//	public RoomObjects[] objects = new RoomObjects[2];
 
+	
+	public ArrayList<Interactive> methodList = new ArrayList<Interactive>();
+	
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, shortDescription, longDescription);
-		this.exits = new Room[4]; // size of the exits inside 1 room.
-//		this.objects = new Object[2];
+		this.exits = new Room[4]; 
 	}
 	
 	/**
@@ -21,16 +27,20 @@ public class Room extends fixtures.Fixture {
 	public void setExit(Room north, Room east, Room south, Room west) {
 		this.exits[0] = north;
 		this.exits[1] = east;
+		
 		this.exits[2] = south;
 		this.exits[3] = west;
 	}
 	
-	//working in progress.
-//	public void setObject(Objects) {
-//		// TODO Auto-generated method stub
-//
-//	}
-	
+	/**
+	 * Assign your objects to your room
+	 * @param object1
+	 * @param object2
+	 */
+	public void setMethod(Interactive object1, Interactive object2) {
+		this.methodList.add(object1);
+		this.methodList.add(object2);
+	}
 	
 	//return our direction
 	//get Exit return this.exits;
@@ -53,5 +63,21 @@ public class Room extends fixtures.Fixture {
 		return null;
 	}
 	
+	//interact with room objects
+	public void interact(int objectIndex) {
+		this.methodList.get(objectIndex).interactwith();
+	}
+
+	public String showObjectName(int objectIndex) {
+		return this.methodList.get(objectIndex).showName();
+	}
+	
+	public String showObjectShortDesc(int objectIndex) {
+		return this.methodList.get(objectIndex).showShortDesc();
+	}
+	
+	public String showObjectLongDesc(int objectIndex) {
+		return this.methodList.get(objectIndex).showLongDesc();
+	}
 	
 }

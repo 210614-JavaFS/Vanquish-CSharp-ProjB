@@ -12,5 +12,6 @@ public class Player {
 		this.name = name;
 	}
 	Room currentRoom;
+	
 	boolean gameStatus = true;
 }
