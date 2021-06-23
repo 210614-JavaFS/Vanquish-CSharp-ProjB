@@ -10,9 +10,21 @@ public class DinningRoom extends fixtures.rooms.Room{
 				+ "pieces and dishes. A note on a rectangular table.");
 	}
 
-	@Override
-	public void interactwith() {
-		
-		
-	}
+//	@Override
+//	public void interactwith() {
+//	
+//	}
+	
+	
+	//For the use of RoomManager.java 
+	
+//	DinningRoom dinningroom = new DinningRoom();
+//	this.rooms[4] = dinningroom;
+//	dinningroom.setExit("kitchen",null,null,null);
+//	Curtain dinningCurtain = new Curtain();
+//	Note dinningNote = new Note();
+//	dinningroom.setMethod(dinningCurtain,dinningNote);
+	
+	
+	
 }
