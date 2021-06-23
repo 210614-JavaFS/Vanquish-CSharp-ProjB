@@ -17,6 +17,8 @@ public class LivingRoom extends fixtures.rooms.Room {
 			"a simple living room",
 			"Place holder description" + "\n");
 		//this.exits[1] = RoomFactory.getRoom(“Dining Room”);
+	
+		
 	}
 
 	
