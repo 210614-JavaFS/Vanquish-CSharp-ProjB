@@ -5,12 +5,12 @@ import java.util.Collection;
 
 import fixtures.object.Interactive;
 
-public class Room extends fixtures.Fixture {
+public abstract class Room extends fixtures.Fixture {
 	
 	public Room[] exits;
 
+	
 	public ArrayList<Interactive> methodList = new ArrayList<Interactive>();
-	public ArrayList<Object> objectList = new ArrayList<Object>();
 	
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, shortDescription, longDescription);
@@ -32,16 +32,15 @@ public class Room extends fixtures.Fixture {
 		this.exits[3] = west;
 	}
 	
-	//working in progress.
+	/**
+	 * Assign your objects to your room
+	 * @param object1
+	 * @param object2
+	 */
 	public void setMethod(Interactive object1, Interactive object2) {
 		this.methodList.add(object1);
 		this.methodList.add(object2);
 	}
-	public void setObject(Object object1, Object object2) {
-		this.objectList.add(object1);
-		this.objectList.add(object2);
-	}	
-	
 	
 	//return our direction
 	//get Exit return this.exits;
