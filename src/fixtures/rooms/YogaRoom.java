@@ -7,10 +7,12 @@ public class YogaRoom extends fixtures.rooms.Room{
 	public YogaRoom() {
 		// TODO Auto-generated constructor stub
 		super("Yoga Room", 
-			"Short Description: For meditation.", 
-			"Long Descripption: A place with a mat. South of the main room. " + "\n" + "take the right exit for going to the bathroom" + "\n" + "take the left exit to go to the Dinning room");
+			"For meditation.", 
+			"The southernmost room with a mat that's specifically made for meditation. To it's north is the living room. " + "\n" + "Also, to its right exit is the bathroom, " + "\n" + "and to its left is the Dinning room.");
 	}
-
+    public void interactwith() {
+    	
+    }
 }
 
 ////1. Instantiate you room
