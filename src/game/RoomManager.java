@@ -4,9 +4,9 @@ import fixtures.object.Computer;
 import fixtures.object.Drawer;
 import fixtures.object.Lamp;
 import fixtures.object.Printer;
+import fixtures.rooms.ComputerRoom;
 import fixtures.rooms.LivingRoom;
 import fixtures.rooms.Room;
-import fixtures.rooms.ComputerRoom;
 
 public class RoomManager {
 	Room startingRoom;
@@ -40,17 +40,15 @@ public class RoomManager {
 //	    Table bathroomTable = new Table();
 //	    Lamp bathroomLamp = new Lamp();
 //	    //5. assign your objects to your room
-//	    bathroom.setMethod(bathroomTable, bathroomLamp);
-	    
+//	    bathroom.setMethod(bathroomTable, bathroomLamp);	    
+
 	    //ComputerRoom
   		ComputerRoom pcRoom = new ComputerRoom();
-  			  	    this.rooms[4] = pcRoom;
-  	    
+  			  	    this.rooms[4] = pcRoom;  	    
   	  
   	    //Objects
   	  	Computer computerRoomComputer = new Computer();
-  	  	Printer computerRoomprinter = new Printer();
-  	  
+  	  	Printer computerRoomprinter = new Printer();  	  
   	    	    
   	    //set Exit 
   	    //north, east, south, west
