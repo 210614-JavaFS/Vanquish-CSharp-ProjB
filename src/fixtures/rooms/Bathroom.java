@@ -11,5 +11,11 @@ public class Bathroom extends fixtures.Fixture {
 		this.exits = new Bathroom[4]; // size is your choice
 		
 	}
+
+	@Override
+	public void interactwith() {
+		// TODO Auto-generated method stub
+		
+	}
 		
 }
