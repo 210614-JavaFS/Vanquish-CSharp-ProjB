@@ -55,4 +55,5 @@ public class RoomManager {
 	  	    //set objects to room
 	  	    pcRoom.setMethod(computerRoomComputer, computerRoomComputer);
 	}
+
 }

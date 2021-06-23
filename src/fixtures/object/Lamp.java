@@ -1,3 +1,4 @@
+
 package fixtures.object;
 
 import fixtures.Fixture;
@@ -19,3 +20,4 @@ public class Lamp extends Fixture implements Interactive {
 	}
 
 }
+
