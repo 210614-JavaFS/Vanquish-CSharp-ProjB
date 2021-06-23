@@ -12,21 +12,21 @@ public class RoomManager {
 	
 	public void init() {
 		
-		//Room
+		//Foyer
 	    Foyer foyer = new Foyer();
 	    this.rooms[0] = foyer;
 	    this.startingRoom = foyer;
 	    //Objects
 	    Lamp foyerLamp = new Lamp();
 	    Drawer foyerDrawer = new Drawer();
-
+	    
 	
 	    //set Exit 
 	    //north, east, south, east
 	    foyer.setExit(null, null, null, null);
 	    
 	    //set objects to room
+	    foyer.setMethod(foyerLamp, foyerDrawer);
 	    foyer.setObject(foyerLamp, foyerDrawer);
-	    
 	}
 }

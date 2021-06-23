@@ -14,17 +14,18 @@ public class Main {
 		
 		System.out.println("Welcome to the Hall Tour. Type to follow the directions");
 		Controls.enterName(newPlayer);
+		System.out.println("Hello, " + newPlayer.name + ". Welcome to our castle");
 		
-		System.out.println("Game: You can type 'go north, west, east, south'. Type 'exit' to quit game.");
-		Controls.printRoom(newPlayer);
-		System.out.println("Short Description: " + newPlayer.currentRoom.getShortDescription());
-		System.out.println("Long Description: " + newPlayer.currentRoom.getLongDescription());
-		System.out.println("Game: Please specify where you want to go next");
+		while (newPlayer.gameStatus) {
+			System.out.println("Game: You can type 'go north, west, east, south'. Type 'exit' to quit game.");
+			Controls.printRoom(newPlayer);
+			System.out.println("Short Description: " + newPlayer.currentRoom.getShortDescription());
+			System.out.println("Long Description: " + newPlayer.currentRoom.getLongDescription());
+			System.out.println("Game: Please specify where you want to go next");
+			
+			Controls.processInput(Controls.collectInput(), newPlayer);
+		}
 
-		newPlayer.currentRoom.objectList.get(0).name;
-		
-		newPlayer.currentRoom.interact(0);
-		newPlayer.currentRoom.interact(1);
 		
 	}
 }

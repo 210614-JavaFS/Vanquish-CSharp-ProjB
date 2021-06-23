@@ -9,7 +9,8 @@ public class Room extends fixtures.Fixture {
 	
 	public Room[] exits;
 
-	public ArrayList<Interactive> objectList = new ArrayList<Interactive>();
+	public ArrayList<Interactive> methodList = new ArrayList<Interactive>();
+	public ArrayList<Object> objectList = new ArrayList<Object>();
 	
 	public Room(String name, String shortDescription, String longDescription) {
 		super(name, shortDescription, longDescription);
@@ -32,10 +33,14 @@ public class Room extends fixtures.Fixture {
 	}
 	
 	//working in progress.
-	public void setObject(Object object1, Object object2) {
-		this.objectList.addAll((Collection<? extends Interactive>) object1);
-		this.objectList.addAll((Collection<? extends Interactive>) object2);
+	public void setMethod(Interactive object1, Interactive object2) {
+		this.methodList.add(object1);
+		this.methodList.add(object2);
 	}
+	public void setObject(Object object1, Object object2) {
+		this.objectList.add(object1);
+		this.objectList.add(object2);
+	}	
 	
 	
 	//return our direction
@@ -61,11 +66,11 @@ public class Room extends fixtures.Fixture {
 	
 	//interact with room objects
 	public void interact(int objectIndex) {
-		this.objectList.get(objectIndex).interactwith();
+		this.methodList.get(objectIndex).interactwith();
 	}
 	
 	//show room objects' description
 //	public void showObjectShortDesc(int objectIndex) {
-//		this.roomObjectList
+//		this.objectList.get(objectIndex).name;
 //	}
 }
