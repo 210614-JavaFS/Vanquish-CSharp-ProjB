@@ -3,7 +3,8 @@ package game;
 
 public class Main {
 	
-	public static void main(String[] args) {
+	
+	public static void main(String[] args){
 		//instantiate our new game with Room Manager
 		RoomManager newGame = new RoomManager();
 		//invoke and set the rooms information to our object newGame
