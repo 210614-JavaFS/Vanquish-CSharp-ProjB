@@ -10,6 +10,12 @@ public class DinningRoom extends fixtures.rooms.Room{
 				+ "pieces and dishes. A note on a rectangular table."+ "\n"
 				+ "Take the north exit to Kitchen or west exit to Yoga Room.");
 	}
+
+	@Override
+	public void interactwith() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	//For the use of RoomManager.java 
