@@ -6,7 +6,7 @@ import fixtures.Fixture;
  * Object's Description
  * 
  * @author Raquel
- * @param Class       Door
+ * @param Class Door
  * @param constructor Door
  */
 
