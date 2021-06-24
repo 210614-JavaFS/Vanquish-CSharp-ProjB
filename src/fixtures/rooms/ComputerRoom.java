@@ -5,13 +5,13 @@ import fixtures.object.Interactive;
 public class ComputerRoom extends fixtures.rooms.Room implements Interactive{
 	ComputerRoom[] exits;
 		
-	// 3. Computer Room
-	this.rooms[5] = computerroom;
-	// Computer Room's exits
-	computerroom.setExit(null, mancave, livingroom, library);
-	Computer computer = new  Computer();
-	Printer printer = new Printer();	
-	computerroom.setMethod(computer,printer);
+//	// 3. Computer Room
+//	this.rooms[5] = computerroom;
+//	// Computer Room's exits
+//	computerroom.setExit(null, mancave, livingroom, library);
+//	Computer computer = new  Computer();
+//	Printer printer = new Printer();	
+//	computerroom.setMethod(computer,printer);
 	
 	
 	

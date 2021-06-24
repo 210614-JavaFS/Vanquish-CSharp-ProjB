@@ -1,12 +1,24 @@
 package game;
 
+import fixtures.object.Book;
+import fixtures.object.Computer;
+import fixtures.object.Controller;
 import fixtures.object.Curtain;
+import fixtures.object.Door;
 import fixtures.object.Drawer;
 import fixtures.object.Lamp;
+import fixtures.object.Mead;
 import fixtures.object.Note;
+import fixtures.object.PlayStation;
+import fixtures.object.Table;
 import fixtures.object.YogaMat;
+import fixtures.rooms.Bathroom;
+import fixtures.rooms.BedroomChamber;
+import fixtures.rooms.ComputerRoom;
 import fixtures.rooms.DinningRoom;
+import fixtures.rooms.Library;
 import fixtures.rooms.LivingRoom;
+import fixtures.object.Printer;
 import fixtures.rooms.Room;
 import fixtures.rooms.YogaRoom;
 
@@ -17,7 +29,7 @@ public class RoomManager {
 	
 	public void init() {
 		
-		//LivingRoom
+		//0. LivingRoom
 	    LivingRoom livingRoom = new LivingRoom();
 	    this.rooms[0] = livingRoom;
 	    this.startingRoom = livingRoom;
@@ -53,12 +65,47 @@ public class RoomManager {
 	    Lamp yogaLamp = new Lamp();
 	    yogaroom.setMethod(yogaMat, yogaLamp);
 	    
-	    //2. Dining Room
+	    //2. Library
+	    Library library = new Library();
+	    this.rooms[2] = library;
+//		library.setExit(pcRoom,livingRoom,bathroom,null); 
+	    Book book = new Book();
+	    Mead mead = new Mead();
+	    library.setMethod(book,mead);
+	    
+	    //7. Dining Room
 		DinningRoom dinningroom = new DinningRoom();
 		this.rooms[7] = dinningroom;
 //		dinningroom.setExit("kitchen",null,null,yogaroom);
 		Curtain dinningCurtain = new Curtain();
 		Note dinningNote = new Note();
 		dinningroom.setMethod(dinningCurtain,dinningNote);
+		
+		
+		//4. PC Room
+		ComputerRoom computerRoom = new ComputerRoom();
+		this.rooms[4] = computerRoom;
+//		computerroom.setExit(null, mancave, livingroom, library);
+		Computer computer = new  Computer();
+		Printer printer = new Printer();
+		computerRoom.setMethod(computer,printer);
+		
+		//5. Bathroom
+		Bathroom bathroom = new Bathroom(); 
+		this.rooms[5] = bathroom; 
+//		bathroom.setExit(library, yoga, null , null); 
+		Table bathroomTable = new Table(); 
+		Door bathroomDoor = new Door();
+		bathroom.setMethod(bathroomTable, bathroomDoor);
+		 
+		//6. BedroomChamber
+		BedroomChamber bedroomchamber = new BedroomChamber();
+		this.rooms[6] = bedroomchamber;
+//		bedroomchamber.setExit(library, ManCave, LivingRoom, DiningRoom, null;
+		PlayStation bedroomchamberPlayStation = new PlayStation();
+		Controller bedroomchamberController = new Controller();
+		bedroomchamber.setMethod(bedroomchamberPlayStation, bedroomchamberController);
+		
+		
 	}
 }
