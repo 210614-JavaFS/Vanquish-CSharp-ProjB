@@ -89,7 +89,7 @@ public class RoomManager {
 		this.rooms[4] = computerRoom;
 		
 		Computer computer = new  Computer();
-		Printer printer = new Printer(false, 5);
+		Printer printer = new Printer();
 		computerRoom.setMethod(computer,printer);
 		
 		//5. Bathroom

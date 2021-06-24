@@ -104,7 +104,7 @@ public class Controls {
 			//NOTE. Interact with object
 			
 			case "1":
-				if (player.currentRoom.showObjectName(0) != null) {
+				if (player.currentRoom.methodList.get(0) != null) {
 					player.currentRoom.interact(0);
 				} else {
 					System.out.println("---- OOPS -----");
@@ -114,7 +114,7 @@ public class Controls {
 				break;
 			
 			case "2":
-				if (player.currentRoom.showObjectName(1) != null) {
+				if (player.currentRoom.methodList.get(1) != null) {
 					player.currentRoom.interact(1);
 				} else {
 					System.out.println("---- OOPS -----");
@@ -132,5 +132,6 @@ public class Controls {
 				System.out.println("Invalid input. Type in 'go + direction' ");
 		}
 	}	
+
 		
 }
