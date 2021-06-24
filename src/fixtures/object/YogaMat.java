@@ -12,7 +12,7 @@ public class YogaMat extends Fixture implements Interactive {
 	
 	@Override
 	public void interactwith() {
-		this.longDescription = "A fabric that extends half the room for meditation and relaxation.";
+		this.longDescription = "After you take a closer look at the fabric. It's actually a very nice expensive Yoga mat.";
 		
 	}
 }
