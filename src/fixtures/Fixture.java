@@ -65,5 +65,8 @@ public abstract class Fixture implements Interactive {
 	public String showLongDesc() {
 		return this.longDescription;
 	}
+	@Override
+	public void interactwith() {};
+	
 }
 

@@ -14,8 +14,8 @@ public class Book extends Fixture implements Interactive  {
 
 	@Override
 	public void interactwith() {
-		this.longDescription = "You place the book an the table and remove most of the dust revealing the title, The Art of Making Good Mead.";
-		
+		this.longDescription = "You place the book an the table and remove most of the dust revealing the title,"+ 
+				"The Art of Making Good Mead.";		
 	}
 
 }

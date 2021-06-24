@@ -52,7 +52,7 @@ public class RoomManager {
   	    	    
   	    //set Exit 
   	    //north, east, south, west
-  	    pcRoom.setExit(null, mancave, livingRoom, library);
+  	   // pcRoom.setExit(null, mancave, livingRoom, library);
 
   	    //set objects to room
   	    pcRoom.setMethod(computerRoomComputer, computerRoomPrinter);

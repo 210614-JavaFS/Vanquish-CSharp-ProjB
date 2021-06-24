@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import fixtures.object.Interactive;
 
-public abstract class Room extends fixtures.Fixture {
+public class Room extends fixtures.Fixture {
 	
 	public Room[] exits;
 
