@@ -1,4 +1,3 @@
-
 package fixtures.object;
 
 public interface Interactive {
