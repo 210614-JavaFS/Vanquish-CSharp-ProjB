@@ -17,16 +17,16 @@ public class Computer extends Fixture implements Interactive{
 		this.games[1]= "Call of Duty";
 		this.games[2]= "Zork";
 		this.games[3]= "spring tool suite";
+		this.model = "AMD Ryzen 9 5900X";
 		this.powerOn = false;
 		this.name = "Computer";
 		this.shortDescription = "Turn on the computer and do programming or play games.";
 		this.longDescription = "A computer for publc use. User can do programming or play games. \n"
 				+  "The computer is currently turned on?. \n" + this.powerOn;			
-		this.model = "AMD Ryzen 9 5900X";
+		
+	}
 	
-	}	
-
-
+	
 	@Override
 	public void interactwith() {	
 		this.powerOn=true;
@@ -60,6 +60,4 @@ public class Computer extends Fixture implements Interactive{
 		return instructor + " \n" + coding;
 		
 	}
-
-	
 }

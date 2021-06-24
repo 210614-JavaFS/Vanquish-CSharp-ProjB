@@ -20,8 +20,8 @@ public class Main {
 		System.out.println("Hello, " + newPlayer.name + ". Welcome to our castle");
 		
 		while (newPlayer.gameStatus) {
-			System.out.println("Game: You can type 'go north, west, east, south'. Type 'exit' to quit game.");
-			System.out.println("Game: To interact with room objects, type the number of your option. Type 'exit' to quit game.");
+			System.out.println("Game Tip: You can type 'go north, west, east, south'. Type 'exit' to quit game.");
+			System.out.println("Game Tip: To interact with room objects, type the number of your option ( 1 or 2). Type 'exit' to quit game.");
 			System.out.println("--------");
 			Controls.printRoom(newPlayer);
 			System.out.println("--------");
