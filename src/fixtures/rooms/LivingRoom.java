@@ -1,8 +1,5 @@
 package fixtures.rooms;
 
-import fixtures.object.Interactive;
-
-
 /**	
  * /
  * @author Billy;
@@ -25,11 +22,7 @@ public class LivingRoom extends fixtures.rooms.Room {
 		
 	}
 
-	@Override
-	public void interactwith() {
-		// TODO Auto-generated method stub
-		
+	
 	}
 
 	
-}
