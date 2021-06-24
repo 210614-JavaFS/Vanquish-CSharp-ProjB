@@ -8,6 +8,28 @@ public class Controls {
 		
 	}
 	
+	public static void printObjects(Player newPlayer) {
+		System.out.println("This room has: ");
+		
+		if (newPlayer.currentRoom.methodList.get(0) != null) {
+			System.out.println(
+					"1. Name: " + newPlayer.currentRoom.showObjectName(0) + "\n"
+							+ "-- Status: " + newPlayer.currentRoom.showObjectLongDesc(0) + "\n"
+					);		
+		} else {
+			System.out.println("1. This object does not exist.");
+		}
+		
+		if (newPlayer.currentRoom.methodList.get(1) != null) {
+			System.out.println(
+					"2. Name: " + newPlayer.currentRoom.showObjectName(1) + "\n"
+							+ "-- Status: " + newPlayer.currentRoom.showObjectLongDesc(1) + "\n"
+					);		
+		} else {
+			System.out.println("2. This object does not exist.");
+		}
+	}
+	
 	public static void enterName(Player newPlayer) {
 		System.out.println("Please enter your name, adventurer");
 		Scanner in = new Scanner(System.in);
@@ -42,14 +64,18 @@ public class Controls {
 						if (player.currentRoom.getExit("north") != null) {
 							player.currentRoom = player.currentRoom.getExit("north");
 						} else {
-							System.out.println("There is nothing over here. Get back");
+							System.out.println("---- OOPS -----");
+							System.out.println("There is nothing over here. Get back!!");
+							System.out.println("---------------");
 						}
 						break;
 					case "east":
 						if (player.currentRoom.getExit("east") != null) {
 							player.currentRoom = player.currentRoom.getExit("east");
 						} else {
-							System.out.println("There is nothing over here. Get back");
+							System.out.println("---- OOPS -----");
+							System.out.println("There is nothing over here. Get back!!");
+							System.out.println("---------------");
 						}
 						break;
 						
@@ -57,7 +83,9 @@ public class Controls {
 						if (player.currentRoom.getExit("south") != null) {
 							player.currentRoom = player.currentRoom.getExit("south");
 						} else {
-							System.out.println("There is nothing over here. Get back");
+							System.out.println("---- OOPS -----");
+							System.out.println("There is nothing over here. Get back!!");
+							System.out.println("---------------");
 						}
 						break;
 						
@@ -65,7 +93,9 @@ public class Controls {
 						if (player.currentRoom.getExit("west") != null) {
 							player.currentRoom = player.currentRoom.getExit("west");
 						} else {
+							System.out.println("---- OOPS -----");
 							System.out.println("There is nothing over here. Get back!!");
+							System.out.println("---------------");
 						}
 						break;
 				}
@@ -74,11 +104,23 @@ public class Controls {
 			//NOTE. Interact with object
 			
 			case "1":
-				player.currentRoom.interact(0);
+				if (player.currentRoom.showObjectName(0) != null) {
+					player.currentRoom.interact(0);
+				} else {
+					System.out.println("---- OOPS -----");
+					System.out.println("You can't interact with something that doesn't exist!");
+					System.out.println("---------------");
+				}
 				break;
 			
 			case "2":
-				player.currentRoom.interact(1);
+				if (player.currentRoom.showObjectName(1) != null) {
+					player.currentRoom.interact(1);
+				} else {
+					System.out.println("---- OOPS -----");
+					System.out.println("You can't interact with something that doesn't exist!");
+					System.out.println("---------------");
+				}
 				break;
 				
 			//NOTE. Exit the game	

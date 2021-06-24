@@ -7,8 +7,14 @@ public class DinningRoom extends fixtures.rooms.Room{
 		super("Dinning Room",
 				"A classic formal dinning room",
 				"The room has a darken curtain and elegant furnitures, chandelier lighting, china cabinet for storage of fine "
-				+ "pieces and dishes. A note on a rectangular table."+\n
-				+ "Take the north exit to Kitchen or west exit to Yoga Room.");
+				+ "pieces and dishes. A note on a rectangular table."+ "\n"
+				+ "Take the north exit to bedroom chamber or west exit to Yoga Room.");
+	}
+
+	@Override
+	public void interactwith() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
