@@ -1,8 +1,5 @@
 package fixtures.rooms;
 
-import fixtures.object.Lamp;
-import fixtures.object.Table;
-
 public class Bathroom extends fixtures.rooms.Room {
 	
 	
@@ -25,20 +22,16 @@ public class Bathroom extends fixtures.rooms.Room {
 		
 	}
 		
-	 //1. Instantiate you room
-  //  Bathroom bathroom = new Bathroom();
-//    //2. assign your room to the array rooms[]
-   // this.rooms[5] = bathroom;
-//    //3. assign the exits to your room
-  //  bathroom.setExit(library, Yoga, null , null);
-//    //4. instantiate your objects inside room
-  //  Table bathroomTable = new Table();
-   // Lamp bathroomLamp = new Lamp();
-//    //5. assign your objects to your room
-   //  bathroom.setMethod(bathroomTable, bathroomLamp);
-
-   }
-
+/*
+ * 1. Instantiate you room Bathroom bathroom = new Bathroom(); 2. assign your
+ * room to the array rooms[] this.rooms[5] = bathroom; 3. assign the exits to
+ * your room bathroom.setExit(library, yoga, null , null); 4. instantiate your
+ * objects inside room Table bathroomTable = new Table(); Lamp bathroomLamp =
+ * new Lamp(); 5. assign your objects to your room
+ * bathroom.setMethod(bathroomTable, bathroomLamp);
+ */
+   
+}
 
 
    

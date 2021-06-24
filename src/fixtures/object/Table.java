@@ -14,11 +14,18 @@ public class Table  extends Fixture implements Interactive {
        
     }
 	
-
-   public void interactWith(){
+	@Override
+   public void interactwith(){
 	System.out.print("You have put some different flowers on top of the table.");
     this.longDescription = "The table is broken and painted therefore is not available to use.";
     }
+
+
+
+
+
+	
 }
+
 
 
