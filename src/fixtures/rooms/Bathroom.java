@@ -1,5 +1,12 @@
 package fixtures.rooms;
 
+/**
+ * Object's Description
+ * @author Raquel
+ * @param Class Bathroom
+ * @param constructor Bathroom 
+ */
+
 public class Bathroom extends fixtures.rooms.Room {
 
 	public Bathroom() {
