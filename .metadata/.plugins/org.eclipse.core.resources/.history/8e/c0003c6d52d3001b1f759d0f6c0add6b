@@ -1,0 +1,15 @@
+package game;
+
+public class RoomManager {
+
+	String pc = "PC";
+	String pcShort = "Personal Computer used to print or create items.";
+	
+	String printer3D = "3D Printer";
+	String printer3DShort = "3D Printer to print a hat, shirt, or a weapon.";
+	
+	String printer = "printer";
+	String printerShort = "Printer to print bluebrints or a castle mortgage";
+	
+	
+}

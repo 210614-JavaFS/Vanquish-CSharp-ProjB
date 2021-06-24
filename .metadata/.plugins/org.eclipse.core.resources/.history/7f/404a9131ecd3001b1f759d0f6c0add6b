@@ -1,0 +1,30 @@
+package com.revature.hometours.fixtures.rooms;
+
+import com.revature.hometours.fixtures.Fixture;
+
+public class Room extends Fixture {
+	
+	 public String[] exits = {"north","east"};
+	//public String Room[] = {"north","east"};
+	//Room[] exits = new Room[];
+	
+public Room(String pc, String pcShort, String pcLong, String printer3d, String printer3dShort, String printer,
+			String printerShort, String Room[]) {
+		super(pc, pcShort, pcLong, printer3d, printer3dShort, printer, printerShort);
+		
+	}
+
+
+public Room[] getExits() {
+	//return ["north","east"];
+}
+
+public Room getExit(String getDirection) {
+	
+}
+
+
+
+
+
+}

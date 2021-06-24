@@ -1,0 +1,64 @@
+package game;
+
+import java.util.Scanner;
+
+import com.revature.hometours.fixtures.Fixture;
+import com.revature.hometours.fixtures.rooms.ComputerRoom;
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+	//	RoomManager newGame = new RoomManager();
+		//newGame.init();
+		startTour();		
+	//public printRoom(null);
+		printRoom();
+		
+		
+		
+	//	Scanner readLine = new Scanner(System.in);
+		
+	//	Room room = new Room(null, null, null, null);		
+
+//ComputerRoom pc = new ComputerRoom(room.name, room.shortDescription, room.longDescription);
+
+	/*
+	 * pc.print("House Blue Prints"); pc.exitRoom("Living Room");
+	 * pc.print3D("a nice hat");
+	 */
+
+// Fixture room2 = new ComputerRoom("Secret Basement", "Stairway to downstairs room", "Secret room where you can locate a 20% off coupon for the house.");
+// room2.exitRoom("Secret Basement Room");
+//System.out.println(room2.name);
+	};
+	
+	
+	public static void startTour() {
+		
+	
+		Scanner readLine = new Scanner(System.in);
+		System.out.println("         Welcome to the Home Tour");
+		System.out.println("         ======================= \n");
+		int choice;
+		choice = readLine.nextInt();
+		
+	};
+		
+	private static void printRoom(Player newPlayer) {
+		System.out.println("You are currently in room " + newPlayer.currentRoom);
+	};
+
+//	private static String[] collectInput() {
+	//	return null;
+		
+	//	public String ans = System.in(readline);
+	
+	//}
+		
+	 //private static void parse(String[] command, Player player) {
+ 
+	 //}
+
+};

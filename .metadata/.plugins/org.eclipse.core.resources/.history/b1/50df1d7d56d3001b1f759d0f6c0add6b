@@ -1,0 +1,9 @@
+package com.revature.hometours.fixtures.rooms;
+
+import com.revature.hometours.fixtures.Fixture;
+
+public class Room  {
+String [] exits = {"north", "east", "south", "west"};
+
+
+}

@@ -1,0 +1,40 @@
+package com.revature.hometours.fixtures.rooms;
+
+import com.revature.hometours.fixtures.Fixture;
+
+public class Room extends Fixture {	
+	 public Room[] exits;
+	
+	 public Room(String name, String shortDescription, String longDescription) {
+		 super(name, shortDescription, longDescription);
+		 this.exits = new Room[2];		 
+	 }
+	 
+	 public Room[] getExits() {
+		return this.exits;	
+	 }
+	 
+	 
+	
+	  @Override
+	public void exitRoom(String room) {
+		System.out.println("You are about to leave the Computer Room");
+	}
+
+	@Override
+	public String toString() {
+		return "Room [name=" + name + ", shortDescription=" + shortDescription + ", longDescription=" + longDescription
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	};
+
+
+
+
+
+
+
+
+
+
+}

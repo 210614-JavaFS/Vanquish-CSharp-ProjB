@@ -1,0 +1,20 @@
+package game;
+
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class Player {
+	
+	public static String name;
+	
+	public Room currentRoom;
+
+	public String getName() {
+	return name;
+}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public boolean playerStatus = true;
+}

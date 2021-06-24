@@ -1,0 +1,31 @@
+package game;
+
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class Main {
+	public static void main(String[] args) {
+		//startTour();		
+		
+		Room room = new Room();
+		
+
+	}
+		
+//	private static void printRoom(Player player) {
+
+//	}
+
+//	private static String[] collectInput() {
+//		return null;
+
+//	}
+		
+	// private static void parseb(String[] command, Player player) {
+ 
+	// }
+	
+	 static void startTour() {
+		System.out.println("Welcome to the Castle Tour");
+		
+	}
+}

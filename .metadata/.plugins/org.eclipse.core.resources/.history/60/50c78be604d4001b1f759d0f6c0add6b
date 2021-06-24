@@ -1,0 +1,32 @@
+package com.revature.hometours.fixtures.rooms;
+
+import com.revature.hometours.fixtures.Fixture;
+import com.revature.hometours.fixtures.objects.InteractivePrinter;
+
+public class ComputerRoom extends Fixture implements InteractivePrinter{
+
+
+	public ComputerRoom() {
+		super();
+	}
+
+	public ComputerRoom(String name, String shortDescription, String longDescription) {
+		super(name, shortDescription, longDescription);
+	}
+
+	@Override
+	public void exitRoom() {
+		System.out.println("You are exiting computer room to " );
+		
+	}
+
+	@Override
+	public void print(String bluePrint) {
+		System.out.println("You are printing  \n" + bluePrint);
+		
+	}
+
+	
+
+
+}

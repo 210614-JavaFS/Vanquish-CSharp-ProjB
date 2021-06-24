@@ -1,0 +1,11 @@
+package com.revature.hometours.fixtures.objects;
+
+public interface InteractivePrinter {
+void print(String bluePrint);
+
+
+void print3D(String print3d);
+
+
+
+}

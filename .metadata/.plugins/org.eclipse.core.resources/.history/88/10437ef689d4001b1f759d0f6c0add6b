@@ -1,0 +1,37 @@
+package com.revature.hometours.fixtures.rooms;
+
+import com.revature.hometours.fixtures.objects.Interactive;
+import com.revature.hometours.fixtures.objects.Printer;
+
+public class ComputerRoom extends Room{
+
+	private Interactive roomFeature= new Printer();
+	//Whatever interactive object you have made for the room.
+
+	
+	public ComputerRoom() {
+		super("Computer Room", 
+				"personal computer room ",
+				"A computer room for public use. User can print documents or house blueprints. \n"
+						+   "The computer is currently turned off. \n"
+				);
+		this.exits[0] = RoomManager.getRoom(“Living Room”);
+	}
+
+	@Override
+	public void exitRoom(String room) {
+		System.out.println("You are exiting Computer Room to " + room);
+		
+	}
+
+	public void print(String bluePrint) {
+		System.out.println("You are printing " + bluePrint);		
+	}
+		
+	public void print3D(String print3d) {
+		System.out.println("You are creating " + print3d);
+	}
+	
+
+
+}

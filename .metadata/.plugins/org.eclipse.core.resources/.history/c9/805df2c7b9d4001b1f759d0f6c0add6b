@@ -1,0 +1,37 @@
+package com.revature.hometours.fixtures.objects;
+
+import com.revature.hometours.fixtures.Fixture;
+
+public class Printer extends Fixture implements Interactive {
+
+	
+	public void interactWith() {
+		System.out.println("A printer for printing documents");
+		
+	}
+
+	@Override
+	public String showName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String showShortDesc() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String showLongDesc() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void exitRoom(String room) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.revature.hometours.fixtures.roomsdel;
+
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class ComputerRoom extends Room{
+
+	public ComputerRoom(String pc, String pcShort, String pcLong, String printer3d, String printer3dShort,
+			String printer, String printerShort, String[] Room) {
+		super(pc, pcShort, pcLong, printer3d, printer3dShort, printer, printerShort, Room);
+		
+	}
+
+
+}

@@ -1,0 +1,35 @@
+package com.revature.hometours.fixtures.rooms;
+
+import com.revature.hometours.fixtures.Fixture;
+import com.revature.hometours.fixtures.objects.Printer;
+
+public class ComputerRoom extends Fixture implements Printer{
+
+
+	public ComputerRoom() {
+		super();
+	}
+
+	public ComputerRoom(String name, String shortDescription, String longDescription) {
+		super(name, shortDescription, longDescription);
+	}
+
+	@Override
+	public void exitRoom(String room) {
+		System.out.println("You are exiting Computer Room to " + room);
+		
+	}
+
+	@Override
+	public void print(String bluePrint) {
+		System.out.println("You are printing " + bluePrint);		
+	}
+		
+	@Override
+	public void print3D(String print3d) {
+		System.out.println("You are creating " + print3d);
+	}
+	
+
+
+}

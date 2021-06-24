@@ -1,0 +1,7 @@
+package game;
+
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class Player {
+public Room currentRoom;
+}

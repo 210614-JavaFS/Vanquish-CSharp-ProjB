@@ -1,0 +1,18 @@
+package com.revature.hometours.fixtures;
+
+public abstract class Fixture {
+	
+	public String name;
+	public String shortDescription;
+	public String longDescription;
+			
+	public Fixture() {
+		super();
+		this.name = name		;
+		this.shortDescription = shortDescription;
+		this.longDescription = longDescription;	
+		}	
+	
+	public abstract void exitRoom(String room);
+	
+}

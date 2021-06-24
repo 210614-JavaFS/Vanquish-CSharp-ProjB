@@ -1,0 +1,45 @@
+package com.revature.hometours.fixtures.objects;
+
+import com.revature.hometours.fixtures.Fixture;
+
+public class computer extends Fixture implements Interactive {
+public computer() {
+	super();
+	this.name = "Computer";
+	this.shortDescription = "Turn on the computer and it to print documents or create items.";
+	this.longDescription = "A computer for publc use. User can  print documents or create items. The \n"
+			+  "The computer is currently turned off. \n";
+			
+}
+	
+	@Override
+	public void interactWith() {
+		System.out.println("You have switched on the computer");
+		
+	}
+
+	@Override
+	public String showName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String showShortDesc() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String showLongDesc() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void exitRoom(String room) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.revature.hometours.fixtures;
+
+public abstract class Fixture {
+	
+	public String name;
+	public String shortDescription;
+	public String longDescription;
+	
+	/*
+	public String printer3D = "3D Printer";
+	public String printer3DShort = "3D Printer to print a hat, shirt, or a weapon.";
+	
+	public String printer = "printer";
+	public String printerShort = "Printer to print blueprints or a castle mortgage";
+	*/
+	
+	public Fixture(String name, String shortDescription, String longDescription) {
+		super();
+		this.name = name		;
+		this.shortDescription = shortDescription;
+		this.longDescription = longDescription;	
+		}
+	
+	public Fixture() {
+		super();		
+	}
+	
+	public abstract void exitRoom(String room);
+	
+}

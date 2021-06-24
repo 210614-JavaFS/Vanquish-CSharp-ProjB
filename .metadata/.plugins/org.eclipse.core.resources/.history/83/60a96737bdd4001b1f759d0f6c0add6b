@@ -1,0 +1,49 @@
+package game;
+
+import java.util.Scanner;
+
+import com.revature.hometours.fixtures.Fixture;
+import com.revature.hometours.fixtures.objects.Printer;
+import com.revature.hometours.fixtures.rooms.ComputerRoom;
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class Main {
+	
+	public static void main(String[] args) {		
+			//	RoomManager newGame = new RoomManager();
+		//newGame.init();
+		Printer print = new Printer();
+		
+	Main start = new Main();
+	start.startTour();
+	System.out.println(print.numPages);
+		//printRoom(Player newPlayer);
+		
+	};
+		
+	private void startTour() {			
+		Scanner readLine = new Scanner(System.in);
+		
+		System.out.println("         Welcome to the Home Tour");
+		System.out.println("         ======================= \n");	
+		System.out.println("Please choose from the foolowing options \n");
+		//int choice = readLine.nextInt();
+		 
+	};
+		
+	private static void printRoom(Player newPlayer) {
+		System.out.println("You are currently in room " + newPlayer.currentRoom);
+	};
+
+//	private static String[] collectInput() {
+	//	return null;
+		
+	
+	
+	//}
+		
+	 //private static void parse(String[] command, Player player) {
+ 
+	 //}
+
+};

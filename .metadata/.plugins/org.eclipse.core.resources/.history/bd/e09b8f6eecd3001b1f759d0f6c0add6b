@@ -1,0 +1,5 @@
+package com.revature.hometours.fixtures.objectsDel;
+
+public interface Interactive {
+
+}

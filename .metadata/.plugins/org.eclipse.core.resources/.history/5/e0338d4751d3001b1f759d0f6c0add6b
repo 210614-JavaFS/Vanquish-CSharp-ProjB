@@ -1,0 +1,9 @@
+package game;
+
+public class RoomManager {
+
+	String pc = "PC";
+	String printer3D = " 3D Printer";
+	String printer = "printer";
+	
+}

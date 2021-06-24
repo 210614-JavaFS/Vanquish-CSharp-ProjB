@@ -1,0 +1,43 @@
+package game;
+
+import com.revature.hometours.fixtures.rooms.ComputerRoom;
+import com.revature.hometours.fixtures.rooms.Room;
+
+public class Main {
+	public static void main(String[] args) {
+		//startTour();		
+		
+		Room room = new Room(null, null, null, null);
+		
+room.name = "Computer Room";
+room.shortDescription = "Personal Computer room ";
+room.longDescription  = "Player can turn on the computer and it to print documents or create items. The \n"
+		+ "printer can print documents like a castle blueprint or the castle mortgage by entering the follwing \n"
+		+ "printer or 3dprinter to choose between printing documents or creating an item.";
+
+ComputerRoom pc = new ComputerRoom("Computer Room", null, null);
+
+System.out.println(pc);
+
+
+
+	}
+		
+//	private static void printRoom(Player player) {
+
+//	}
+
+//	private static String[] collectInput() {
+//		return null;
+
+//	}
+		
+	// private static void parseb(String[] command, Player player) {
+ 
+	// }
+	
+	 static void startTour() {
+		System.out.println("Welcome to the Castle Tour");
+		
+	}
+}

@@ -1,0 +1,34 @@
+package com.revature.hometours.fixtures;
+
+public abstract class Fixture {
+	
+	public String pc = "Computer Room";
+	public String pcShort = "Personal Computer room ";
+	public String pcLong = "Player can turn on the computer and it to print documents or create items. The \n"
+			+ "printer can print documents like a castle blueprint or the castle mortgage by entering the follwing \n"
+			+ "printer or 3dprinter to choose between printing documents or creating an item.";
+	
+	public String printer3D = "3D Printer";
+	public String printer3DShort = "3D Printer to print a hat, shirt, or a weapon.";
+	
+	public String printer = "printer";
+	public String printerShort = "Printer to print bluebrints or a castle mortgage";
+	
+	public Fixture(String pc, String pcShort, String pcLong, String printer3d, String printer3dShort, String printer,
+			String printerShort) {
+		super();
+		this.pc = pc;
+		this.pcShort = pcShort;
+		this.pcLong = pcLong;
+		printer3D = printer3d;
+		printer3DShort = printer3dShort;
+		this.printer = printer;
+		this.printerShort = printerShort;
+	}
+	
+	public Fixture() {
+		super();
+		
+	}
+	
+}

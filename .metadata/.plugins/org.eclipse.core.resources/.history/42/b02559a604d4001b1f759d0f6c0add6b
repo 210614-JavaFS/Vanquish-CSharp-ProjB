@@ -1,0 +1,5 @@
+package com.revature.hometours.fixtures.objects;
+
+public interface InteractivePrinter {
+void print(String bluePrint);
+}
