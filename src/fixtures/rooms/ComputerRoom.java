@@ -1,8 +1,22 @@
 package fixtures.rooms;
+import fixtures.object.Curtain;
 import fixtures.object.Interactive;
+import fixtures.object.Lamp;
+import fixtures.object.Note;
+import fixtures.object.YogaMat;
 
 public class ComputerRoom extends fixtures.rooms.Room implements Interactive{
 	ComputerRoom[] exits;
+		
+	3. Computer Room
+	this.rooms[5] = computerroom;
+	Computer Room's exits
+	computerroom/setExit(null, mancave, livingroom, library);
+	Computer computer = new  Computer();
+	Printer printer = new Printer();	
+	computerroom.setMethod(computer,printer);
+	
+	
 	
 	public ComputerRoom() {
 			super(
