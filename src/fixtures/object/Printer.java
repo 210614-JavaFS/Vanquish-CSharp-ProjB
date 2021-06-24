@@ -8,7 +8,10 @@ public class Printer extends Fixture implements Interactive {
 	public int numPages = 100;
 	
 	public Printer() {
-		super();	
+		super();
+		this.name = "Printer";
+		this.shortDescription = "Print house blueprints.";
+		this.longDescription = "Print house blueprints.";
 	}
 	
 	
@@ -19,12 +22,12 @@ public class Printer extends Fixture implements Interactive {
 		this.name = "Printer";
 		this.shortDescription = "Print house blueprints.";
 		this.longDescription = "A Printer for publc use. User can print house blueprints. \n"
-				+  "The printer is currently turned on?. \n" + powerOn
+				+  "The printer is currently turned on? " + powerOn + "\n"
 			+ "The printer has " + numPages + " pages left in the tray.";
 	}
 
-
-	public void interactWith() {
+	@Override
+	public void interactwith() {
 		powerOn = true;
 		if (powerOn) {
 			numPages = numPages - 5;
@@ -32,12 +35,6 @@ public class Printer extends Fixture implements Interactive {
 			+ "The printer has " + numPages + " pages left in the tray.");
 		}
 	
-		
-	}
-
-	@Override
-	public void interactwith() {
-		// TODO Auto-generated method stub
 		
 	}
 	

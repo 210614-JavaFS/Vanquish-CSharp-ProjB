@@ -22,7 +22,6 @@ public class ComputerRoom extends fixtures.rooms.Room implements Interactive{
 				"A computer room for public use. User can print house blueprints. \n"		
 			+   "The door to the east leads to the Man Cave. \n"
 			+   "The door to the south leads to the living room. \n"
-			+   "The door to the west leads to the library room. \n"
 				); 
 		
 		//this.exits[0] = RoomManager(“Living Room”);
