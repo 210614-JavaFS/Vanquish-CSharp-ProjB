@@ -1,3 +1,4 @@
+
 package game;
 
 import fixtures.rooms.Room;
@@ -15,3 +16,4 @@ public class Player {
 	
 	boolean gameStatus = true;
 }
+
