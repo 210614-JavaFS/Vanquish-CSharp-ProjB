@@ -45,7 +45,7 @@ public class RoomManager {
 	    
 
 	    //set objects to room
-	    livingRoom.setMethod(livingRoomLamp, livingRoomLampDrawer);
+	    livingRoom.setMethod(livingRoomLamp, null);
 
 //	    //1. Instantiate you room
 //	    Bathroom bathroom = new Bathroom();
@@ -119,7 +119,7 @@ public class RoomManager {
 		//set Exits
 		livingRoom.setExit(computerRoom, bedroomchamber, yogaroom, library);
 	    yogaroom.setExit(livingRoom, dinningroom, null , bathroom);
-		library.setExit(computerRoom,livingRoom,bathroom,null);
+		library.setExit(null,livingRoom,bathroom,null);
 		mancaveroom.setExit(null, null, bedroomchamber , computerRoom);
 		computerRoom.setExit(null, mancaveroom, livingRoom, null);
 		bathroom.setExit(library, yogaroom, null , null);

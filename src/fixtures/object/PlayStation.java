@@ -10,6 +10,7 @@ public class PlayStation extends Fixture implements Interactive {
 		@Override
 		public void interactwith() {
 		System.out.println("You have turned on the PlayStation.");	
+		this.longDescription = "The Playstaion is hard and square and is sitting on a wooden table. It is currently turned on.";
 	}
 }
 	

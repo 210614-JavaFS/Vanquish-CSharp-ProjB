@@ -10,7 +10,7 @@ public class Library extends fixtures.rooms.Room {
 				"An ancient library stack full with books and scrolls but fill with a dark aura \n. "
 				+ "A book lays on the floor cover in dust you cannot see the title. On a table you see a cup \n." 
 				+ "Three exits lead out the room: \n" 
-				+ "North leads to a PC Room, East leads to Living Room, and South leads to the bathroom");
+				+ "East leads to Living Room, and South leads to the bathroom");
 		
 	}
 
