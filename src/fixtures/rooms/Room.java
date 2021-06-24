@@ -1,7 +1,8 @@
+
 package fixtures.rooms;
 
 import java.util.ArrayList;
-import java.util.Collection;
+
 
 import fixtures.object.Interactive;
 
@@ -81,3 +82,4 @@ public abstract class Room extends fixtures.Fixture {
 	}
 	
 }
+
