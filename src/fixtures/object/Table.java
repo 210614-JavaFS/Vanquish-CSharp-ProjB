@@ -2,6 +2,13 @@ package fixtures.object;
 
 import fixtures.Fixture;
 
+/**
+ * Object's Description
+ * @author Raquel
+ * @param Class table
+ * @param constructor table 
+ */
+
 public class Table extends Fixture implements Interactive {
 
 	public Table() {

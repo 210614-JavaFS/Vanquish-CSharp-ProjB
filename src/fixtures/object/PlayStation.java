@@ -9,8 +9,7 @@ public class PlayStation extends Fixture implements Interactive {
 	}
 		@Override
 		public void interactwith() {
-		System.out.println("You have turned on the PlayStation.");
-		
+		System.out.println("You have turned on the PlayStation.");	
 	}
 }
 	
