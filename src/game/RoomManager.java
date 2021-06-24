@@ -1,9 +1,14 @@
 package game;
 
+import fixtures.object.Curtain;
 import fixtures.object.Drawer;
 import fixtures.object.Lamp;
+import fixtures.object.Note;
+import fixtures.object.YogaMat;
+import fixtures.rooms.DinningRoom;
 import fixtures.rooms.LivingRoom;
 import fixtures.rooms.Room;
+import fixtures.rooms.YogaRoom;
 
 public class RoomManager {
 	Room startingRoom;
@@ -39,5 +44,21 @@ public class RoomManager {
 //	    //5. assign your objects to your room
 //	    bathroom.setMethod(bathroomTable, bathroomLamp);
 	    
+	    //1. Yoga Room
+	    YogaRoom yogaroom = new YogaRoom();
+	    this.rooms[1] = yogaroom;
+	    //2. Yoga Room's exits
+	    //yogaroom.setExit(livingroom, diningroom, null , bathroom);
+	    YogaMat yogaMat = new YogaMat();
+	    Lamp yogaLamp = new Lamp();
+	    yogaroom.setMethod(yogaMat, yogaLamp);
+	    
+	    //2. Dining Room
+		DinningRoom dinningroom = new DinningRoom();
+		this.rooms[7] = dinningroom;
+//		dinningroom.setExit("kitchen",null,null,yogaroom);
+		Curtain dinningCurtain = new Curtain();
+		Note dinningNote = new Note();
+		dinningroom.setMethod(dinningCurtain,dinningNote);
 	}
 }
