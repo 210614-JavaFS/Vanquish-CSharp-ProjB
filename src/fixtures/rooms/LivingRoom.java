@@ -8,10 +8,11 @@ package fixtures.rooms;
  */
 
 public class LivingRoom extends fixtures.rooms.Room {
-
-	public LivingRoom() {
-		super("The Living Room", "a simple living room", "Place holder description" + "\n");
-		// this.exits[1] = RoomFactory.getRoom(“Dining Room”);
+	
+	public LivingRoom()  {
+		super("The Living Room",
+			"short description: a simple living room",
+			"long description: Place holder description" + "\n");
 	}
 
 	@Override
