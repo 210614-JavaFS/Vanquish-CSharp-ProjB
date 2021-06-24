@@ -22,7 +22,7 @@ public class Computer extends Fixture implements Interactive{
 		this.name = "Computer";
 		this.shortDescription = "Turn on the computer and do programming or play games.";
 		this.longDescription = "A computer for publc use. User can do programming or play games. \n"
-				+  "The computer is currently turned on?. \n" + this.powerOn;			
+				+  "The computer is currently turned on? " + this.showPowerOn() + "\n";			
 		
 	}
 	
@@ -38,7 +38,7 @@ public class Computer extends Fixture implements Interactive{
 			
 		}
 		this.longDescription = "Games " 
-				+  "The computer is currently turned on. \n" + powerOn + " \n" + this.model + " \n"
+				+  "The computer is currently turned " + this.showPowerOn() + " \n" + this.model + " \n"
 		+ "Launching " + this.games[3];
 		
 		
@@ -59,5 +59,13 @@ public class Computer extends Fixture implements Interactive{
 		String coding = "Starting " + this.games[3];
 		return instructor + " \n" + coding;
 		
+	}
+	
+	public String showPowerOn() {
+		if (this.powerOn == true) {
+			return "On";
+		} else {
+			return "Off";
+		}
 	}
 }

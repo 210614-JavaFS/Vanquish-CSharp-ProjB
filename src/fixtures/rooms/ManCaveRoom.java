@@ -15,6 +15,12 @@ public class ManCaveRoom extends fixtures.rooms.Room{
 	   
 	}
 
+		@Override
+		public void interactwith() {
+			// TODO Auto-generated method stub
+			
+		}
+
 }
 
 ////1. Instantiate you room

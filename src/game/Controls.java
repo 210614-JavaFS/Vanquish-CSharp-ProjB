@@ -15,7 +15,7 @@ public class Controls {
 			System.out.println(
 					"1. Name: " + newPlayer.currentRoom.showObjectName(0) + "\n"
 							+ "-- Status: " + newPlayer.currentRoom.showObjectLongDesc(0) + "\n"
-					);		
+					);
 		} else {
 			System.out.println("1. This object does not exist.");
 		}
@@ -28,6 +28,11 @@ public class Controls {
 		} else {
 			System.out.println("2. This object does not exist.");
 		}
+		
+		//For future version.
+//		for (int i = 0; i < newPlayer.currentRoom.methodList.size(); i++) {
+//			System.out.println("Object " + i);
+//		}
 	}
 	
 	public static void enterName(Player newPlayer) {
