@@ -9,4 +9,5 @@ public interface Interactive {
 	public String showShortDesc();
 	
 	public String showLongDesc();
+
 }
