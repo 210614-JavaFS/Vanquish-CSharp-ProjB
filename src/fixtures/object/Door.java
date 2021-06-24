@@ -2,6 +2,14 @@ package fixtures.object;
 
 import fixtures.Fixture;
 
+/**
+ * Object's Description
+ * 
+ * @author Raquel
+ * @param Class       Door
+ * @param constructor Door
+ */
+
 public class Door extends Fixture implements Interactive {
 
 	public Door() {
